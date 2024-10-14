@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <attr name="magenta" format="color"/>
+        <attr name="amarillo" format="color"/>
+        <attr name="verde" format="color"/>
+        <attr name="azul" format="color"/>
+</resources>
