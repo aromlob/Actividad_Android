@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ActvidadesAndroid</string>
+    <string name="descripcion_imagen"> Descripcion Imagen</string>
 </resources>

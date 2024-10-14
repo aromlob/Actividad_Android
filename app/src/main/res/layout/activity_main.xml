@@ -10,15 +10,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Actividad 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
-        android:id ="@+id/iv_imagen"
+        android:id="@+id/iv_imagen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:src="@drawable/imagen"
-        android:layout_centerInParent="true"/>
+        android:contentDescription="@string/descripcion_imagen"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-134dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
