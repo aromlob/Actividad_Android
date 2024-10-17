@@ -19,14 +19,18 @@ class MainActivity : AppCompatActivity(), OnClickListener {
 
     private lateinit var boton : Button
     private lateinit var texto : TextView
+    private lateinit var boton2 : Button
     private lateinit var boton3 : Button
+    private lateinit var boton4: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         boton = findViewById(R.id.iv_boton)
         texto = findViewById(R.id.iv_texto)
-        boton3 = findViewById(R.id.button3)
+        boton2 = findViewById(R.id.iv_boton2)
+        boton3 = findViewById(R.id.iv_boton3)
+        boton4 = findViewById(R.id.iv_boton4)
         initEvent()
 
     }
@@ -35,7 +39,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             Toast.makeText(this, "Hola!!!!",Toast.LENGTH_LONG).show()
         }
         boton3.setOnClickListener(this)
-
+        boton4.setOnClickListener(this)
     }
 
     fun saludar(view: View) {
@@ -49,9 +53,9 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     }
 
     override fun onClick(p0: View?) {
-        if (p0?.id == R.id.button3){
+        if (p0?.id == R.id.iv_boton3){
             Toast.makeText(this,"Saludo boton3", Toast.LENGTH_LONG).show()
-        }else{
+        };if (p0?.id == R.id.iv_boton4){
             Toast.makeText(this,"Saludo boton4", Toast.LENGTH_LONG).show()
 
         }
