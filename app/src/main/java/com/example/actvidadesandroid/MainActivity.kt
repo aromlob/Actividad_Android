@@ -28,10 +28,11 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onStart() {
         super.onStart()
-        var claseA = ClaseA("Hola",10)
+        var claseA = ClaseA("Hola",10, true)
 
         claseA.setNumero(30)
         claseA.setCadena("Hello")
+        claseA.setAfirmacion(false)
         Toast.makeText(this, claseA.toString(), Toast.LENGTH_LONG).show()
         Log.d(TAG, "Clase A OnStart -> ${claseA.toString()}")
     }

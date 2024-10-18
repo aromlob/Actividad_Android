@@ -3,10 +3,11 @@ package com.example.actvidadesandroid
 class ClaseA {
     private var numero : Int
     private var cadena : String
-
-    constructor(cadena: String, numero: Int) {
+    private var afirmacion : Boolean
+    constructor(cadena: String, numero: Int, afirmacion: Boolean) {
         this.cadena = cadena
         this.numero = numero
+        this.afirmacion = afirmacion
     }
     fun getNumero() : Int{
         return numero
@@ -20,8 +21,16 @@ class ClaseA {
     fun setCadena(cadena: String) : String{
         return cadena
     }
-    override fun toString(): String {
-        return "ClaseA(numero=$numero, cadena='$cadena')"
+    fun getAfrimacion() : Boolean{
+        return afirmacion
     }
+    fun setAfirmacion(afirmacion: Boolean) : Boolean{
+        return afirmacion
+    }
+
+    override fun toString(): String {
+        return "ClaseA(numero=$numero, cadena='$cadena', afirmacion=$afirmacion)"
+    }
+
 
 }
